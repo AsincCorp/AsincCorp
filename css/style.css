@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navegador */
+
+header{
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+
+.navegador {
+  background-color: black;
+  margin-left: 25%;
+}
+
+.lista {
+    padding-top: 25px;
+    display:inline-block;
+    align-items: center;
+}
+
+.lista li{
+    margin:10px;
+    font-size: 25px;
+
+}
