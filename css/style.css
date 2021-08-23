@@ -1,85 +1,58 @@
-:root{
-    --color1 :#008b8b;
-    --color2 : #263974;
-    --color3 : #26719c;
-    --color4 : #00eeffb0;
-    --color5 : #9fffff;  
-}
-
 
 *{
     margin: 0 auto;
     padding: 0px;
 }
 
-
-
 /* Navegador */
-header{
-    height: 100px;
-    padding-bottom: 5px;
-    background-color: var(--color1);
-    border-bottom: 1px solid black;
-
+#logo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-size: 30px;
 }
 
-#logo img{
-    height: 90px;
+.padre{
+    display: inline-block;
+    padding: 10px 20px 10px 20px ;
+    font-size: 13px;
+    font-weight: 600;
+    border: 3px solid #B5FFD9;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 8px;
+    color: white;
     margin-left: 50px;
 }
-
-.navegador{
-   display: flex;
-   position: relative;
-   top: -80px;
-   margin-left: 20%;
-   margin-right: 5%;
+.padre i{
+    font-size: 12px;
+    margin-right: 6px;
+    color: rgb(18, 216, 133);
 }
-
-.navegador ul{
+.padre:last-child{
+    margin-right: 25px;
+}
+nav{
+    background-color: #170055;
     display: flex;
-    justify-content: flex-start;
-    padding: 20px; 
-    width: 100%;
-
-}
-
-.navegador li{
-
-    margin-left:90px ;
-    list-style: none;
-   margin-top: -25px;
-   margin-top: -10px;
-
-}
-
-.navegador li a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 50px 20px 50px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
+    justify-content: flex-end;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(to right, #07db6e, #AE00FB) 1;
     
-    height: 20px;
-    font-weight: 400;
+}
+
+.padre:hover{ 
+    transition: all .9s ease-in-out;
+    transform: translate(10px,-5px);
+  
+    
    
 }
-.navegador li  img{
-    position: relative;
-    height: 30px;
-    width: 30px;
-    right: 10px;
-    background-color: white;
-    border-radius: 100%;
-    padding:5px;
-    
-}
 
-.navegador li a:hover{
-    background-color: #0dcc6d;
-    color: black;
+/* Slider */
+section h1{
+    text-align: center;
 }
