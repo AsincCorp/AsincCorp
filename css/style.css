@@ -72,6 +72,7 @@ nav{
 .bg-pan-right {animation: 8s ease 0s infinite normal both running bg-pan-right;}
 .bg-gradient-hor {background-image: linear-gradient(270deg,#da1b8d,#3e91cc,#2dcca7); background-size: 600% 100%;}
 
+<<<<<<< HEAD
 @-webkit-keyframes bg-pan-right {
 	0% {
 		background-position: 0% 50%;
@@ -82,6 +83,15 @@ nav{
 	100% {
 		background-position: 0% 50%;
 	}  
+=======
+.padre:hover{ 
+    transition: all .9s ease-in-out;
+    transform: translate(10px,-5px);
+    transition: all .45s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
+    
+>>>>>>> d562d5a16d6bba6f6740961e037702382ccc7ea2
 }
 @keyframes bg-pan-right {
 	0% {
@@ -98,6 +108,73 @@ nav{
 
 
 /* Slider */
+section h1{
+    text-align: center;
+}
+
+/* Cards */
+
+
+
+.bg-img{
+    padding-top: 0px;
+    width: 100%;
+    height: 190px;
+    margin: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+}
+
+.card{
+    z-index: 1;
+    padding: 1px 2% 30px 2%;
+    /* margin-top: 100px; */
+    width: 100%;   
+}
+
+
+.descripcion, h3{
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.playa{
+    position: relative;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.descripcion{
+    margin-top: 0px;
+}
+
+.card-complete{
+    margin-top: 40px;
+    width: 20%;
+    margin: 200px, 200px;
+    padding: 0;
+    background-color:rgba(230, 230, 230, 0.9);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(139, 139, 139);
+    border-radius: 10px;
+    transition: all .8s ease-in-out;
+}
+
+.card-complete:hover{
+    cursor: pointer;
+    transform: scale3d(1.12, 1.12, 1);
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, .5);
+}
+
+.card-complete{
+
+}
 
 .banner{
 	position: relative;
