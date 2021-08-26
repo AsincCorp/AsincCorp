@@ -10,7 +10,7 @@ COMANDOS BASICOS
 * git clone (Hacerte una copia de lo que está en el server a tu PC)
 * git checkout -- <file> (Para revertir los cambios de los archivos)
 * git diff <file> (Para ver las diferencias hechas en los archivos)
-* git branch (Ver las ramas que hay ("master" es la rama default))
+* git branch (Ver las ramas que hay ("mastergit t))
 * git branch "nombre" (Crear una nueva rama)
 * git checkout "nombre" (Ir a una rama en especifico) 
 

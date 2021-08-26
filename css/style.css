@@ -1,68 +1,108 @@
+html{
+	scroll-behavior: smooth;
+}
+
+/* Scroll */
+html::-webkit-scrollbar {/* Tamaño del scroll en horizontal */
+	display: none;
+}
 
 *{
-    margin: 0 auto;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navegador */
 #logo{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-left: 10%;
-    font-size: 30px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-left: 10%;
+	font-size: 30px;
 }
 
 .padre{
-    display: inline-block;
-    padding: 10px 20px 10px 20px ;
-    font-size: 13px;
-    font-weight: 600;
-    border: 3px solid #B5FFD9;
-    border-radius: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    margin: 8px;
-    color: white;
-    margin-left: 50px;
-    transition: all .45s ease-in-out;
+	display: inline-block;
+	padding: 10px 20px 10px 20px ;
+	font-size: 13px;
+	font-weight: 600;
+	border: 3px solid #B5FFD9;
+	border-radius: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	margin: 8px;
+	color: white;
+	margin-left: 50px;
+	transition: all .45s ease-in-out;
 }
 .padre i{
-    font-size: 12px;
-    margin-right: 6px;
-    color: rgb(18, 216, 133);
-    
+	font-size: 12px;
+	margin-right: 6px;
+	color: rgb(18, 216, 133);
+	
 }
 .padre:last-child{
-    margin-right: 25px;
+	margin-right: 25px;
 }
 nav{
-    background-color: #170055;
-    display: flex;
-    justify-content: flex-end;
-
-    
-}
-#cintillo{
-    width: 100%;
-    height: 8px;
-    
+	padding: 10px 0px 10px 0px ;
+	background-color: #170055;
+	display: flex;
+	justify-content: flex-end;
+	
+	
 }
 
 .padre:hover{ 
-    transition: all .45s ease-in-out;
-    transform: translateY(-3px);
-    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
-    
+	transition: all .45s ease-in-out;
+	transform: translateY(-3px);
+	box-shadow: -2px 4px 2px  rgb(18, 216, 133);
+	
 }
+
+/* cintillo */
+
+.container {
+	width: 100%;
+	height: 8px;
+	
+}
+.bg-pan-right {animation: 8s ease 0s infinite normal both running bg-pan-right;}
+.bg-gradient-hor {background-image: linear-gradient(270deg,#da1b8d,#3e91cc,#2dcca7); background-size: 600% 100%;}
+
+@-webkit-keyframes bg-pan-right {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}  
+}
+@keyframes bg-pan-right {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}  
+}
+
+
+
 /* Slider */
 
 .banner{
 	position: relative;
 	width: 100%;
-	height: calc(100vh);
+	height: calc(110vh);
 	background-color: #6418a3;
 	background-size: cover;
 	background-position: center;
@@ -82,47 +122,74 @@ nav{
 	justify-content: center;
 	align-items: center;
 }
+.banner-content h1{
+	font-size: 40px;
+	padding-bottom: 40px;
+	padding-top: -40px;
+}
+.banner-content h1 span{
+	font-weight: 800;
+	
+}
+.banner-content a{
+	padding: 10px 50px 10px 50px;
+	border: 5px solid #0ada6e;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	transition: all 0.5s ease-out;
+}
 
 .banner-content a:hover{
-	background-color: #0eeb79;
-	color: #333;
-    font-weight: 600;
+	padding: 10px 90px 10px 90px;
+	background-color:#56e99d ;
+	color:black;
+	transition: all .5s ease-out;
 }
+
 @keyframes banner{
 	0%{
 		background-image: url('../img/banner-1.jpg');
 	}
 	25%{
-		background-image: url('../img/logo practica.jpg');
-	}
-
-
-	26%{
-		background-image: url('../assets/img/banner-2.jpg');
-	}
-	50%{
-		background-image: url('../assets/img/banner-2.jpg');
-	}
-
-
-	51%{
-		background-image: url('../assets/img/banner-3.jpg');
-	}
-	75%{
-		background-image: url('../assets/img/banner-3.jpg');
+		background-image: url('../img/banner-1.jpg');
 	}
 	
-
+	
+	26%{
+		background-image: url('../img/banner-2.jpg');
+	}
+	50%{
+		background-image: url('../img/banner-2.jpg');
+	}
+	
+	
+	51%{
+		background-image: url('../img/banner-3.jpg');
+	}
+	75%{
+		background-image: url('../img/banner-3.jpg');
+	}
+	
+	
 	76%{
-		background-image: url('../assets/img/banner-4.jpg');
+		background-image: url('../img/banner-4.jpg');
 	}
 	100%{
-		background-image: url('../assets/img/banner-4.jpg');
+		background-image: url('../img/banner-4.jpg');
 	}
-
+	
 }
 
-
+/* Contenido */
+.contenido{
+	background-size: cover;
+	width: 100%;
+	height: calc(100vh);
+	margin-top: 25%;
+}
 
 
 
