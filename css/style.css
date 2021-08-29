@@ -205,7 +205,7 @@ nav{
 
 /* Contenido */
 .contenido{
-	background-color: rgba(46, 5, 65, 0.952);
+	background: linear-gradient(180deg,#340255,#3e91cc,#3d0d97);
 	width: 100%;
 	height: calc(100vh);
 	margin-top: 22%;
@@ -231,9 +231,10 @@ nav{
 	padding-bottom: 4px;
 	background-color: rgba(255, 255, 255, 0.842);
 	border: 4px solid rgb(204, 204, 204);
-	border-radius: 7px;
 	margin-left: 4%;
 	transition: all .42s ease-out;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 20px;
 }
 
 .card-content{
@@ -250,6 +251,7 @@ nav{
 	border-top-right-radius: 2px;
 	margin-bottom: 0;
 	border-bottom: 2px solid rgba(54, 54, 54, .1);
+	border-top-left-radius: 20px;
 } 
 
 .titulo-card, .precio{
@@ -284,7 +286,7 @@ nav{
 	transition: all .42s ease-in;
 	transform: translateY(-10px);
 	transform: scale3d(1.05, 1.05, 1);
-	box-shadow: -5px 8px 2px #B5FFD9;
+	box-shadow: -5px 8px 20px #02160c71;
 }
 
 .linea{
@@ -306,11 +308,12 @@ nav{
 	display: inline-block;
 	color:white;
 	margin-bottom: 41px;
+	margin-top: 30px;
 	width: 22%;
 }
 
 .fondo-proyectos{
 	padding: 40px;
 	padding-left: 0;
-	background-color: rgba(0, 0, 0, 0.411);
+	background-color: transparent;
 }
