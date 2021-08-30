@@ -1,7 +1,7 @@
-console.clear();
+//fondo 
+let fondo = document.getElementById('proyectos');
 
-let cintillo = document.getElementById('cintillo');
+fondo.addEventListener("scroll",function(){
+    window.scroll()
 
-console.log(cintillo);
-
-cintillo.style.backgroundColor = '#FF340D';
+})
