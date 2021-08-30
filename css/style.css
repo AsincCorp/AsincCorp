@@ -46,9 +46,8 @@ nav{
 	background-color: #170055;
 	display: flex;
 	justify-content: flex-end;
-	
-	
 }
+
 
 .padre:hover{ 
 	transition: all .45s ease-in-out;
@@ -69,25 +68,33 @@ nav{
 .bg-gradient-hor {background-image: linear-gradient(270deg,#da1b8d,#3e91cc,#2dcca7); background-size: 600% 100%;}
 
 
+@-webkit-keyframes bg-pan-right { 
 
-@-webkit-keyframes bg-pan-right {
-
-	@-webkit-keyframes bg-pan-right {
-		0% {
-			background-position: 0% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-			}
-		
+	0% {
+		background-position: 0% 50%;
 	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}  
+}
+.padre:hover{ 
+    transition: all .9s ease-in-out;
+    transform: translate(10px,-5px);
+    transition: all .45s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
+    
+}
+@keyframes bg-pan-right {
+	0% {
+		background-position: 0% 50%;
 	}
 
 
-
+}
 .padre:hover{ 
     transition: all .9s ease-in-out;
     transform: translate(10px,-5px);
@@ -111,7 +118,7 @@ nav{
 .card{
     z-index: 1;
     padding: 1px 2% 30px 2%;
-    /* margin-top: 100px; */
+    margin-top: 100px;
     width: 100%;   
 }
 
@@ -246,7 +253,7 @@ nav{
 	backface-visibility: visible;
 	background-color: thistle;
 	width: 100%;
-	height: calc(100vh);
+	height: auto;
 	margin-top: 22%;
 }
 
@@ -325,32 +332,90 @@ nav{
 	box-shadow: -5px 8px 20px #02160c71;
 }
 
+.contenedor-linea {
+	display: flex;
+	flex-direction: row;
+}
+
 .linea{
-	display: inline-block;
 	width: 1%;
 	height: 4px;
 	background-color: white;
+	margin-bottom: 41px;
+	margin-top: 60px;
+	flex-basis: 2%;
 }
 
 .linea2{
-	display: inline-block;
+	margin-bottom: 41px;
+	margin-top: 60px;
 	width: 76.4%;
 	height: 4px;
 	background-color: white;
+	flex-basis: 70%;
 }
 
 .titulo-proyecto{
 	font-size: 35px;
-	display: inline-block;
 	color:white;
 	margin-bottom: 41px;
 	margin-top: 30px;
-	width: 22%;
+	flex-basis: 25%;
+}
+
+.titulo-nosotros{
+	font-size: 35px;
+	color:white;
+	margin-bottom: 41px;
+	margin-top: 30px;
+	flex-basis: auto;
 }
 
 .fondo-proyectos{
 	padding: 40px;
 	padding-left: 0;
 	background-color: transparent;
+	
+}
+#nosotros {
+	margin-top: 0;
 }
 
+@media all and (max-width: 1546px) {
+	.fondo-proyectos{
+		padding: 40px;
+		padding-left: 0;
+		background-color: transparent;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card-complete{
+	flex-basis: 28%;
+	}
+}
+
+@media all and (max-width: 1326px) {
+	.titulo-proyecto {
+		flex-basis: 32% ;
+	}
+}
+
+@media all and (max-width: 1114px) {
+	.card-complete {
+		flex-basis: 42%;
+	}
+	.titulo-proyecto {
+		flex-basis: 40%;
+	}
+}
+
+@media all and (max-width: 978px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	nav a {
+		width: 25%;
+	}
+}
