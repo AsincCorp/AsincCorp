@@ -290,8 +290,8 @@ nav{
 .img-card{
 	width: 100%;
 	height: 38%;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
+	border-top-left-radius: /*2px*/ auto;
+	border-top-right-radius: /*2px*/ auto;
 	margin-bottom: 0;
 	border-bottom: 2px solid rgba(54, 54, 54, .1);
 	border-top-left-radius: 20px;
@@ -381,6 +381,62 @@ nav{
 	margin-top: 0;
 }
 
+
+/*-----------------------------------------------------
+--------------------NOSOTROS-------------------------
+-------------------------------------------------------*/
+
+.contenido-principal{
+	margin: 100px 0px 100px 10px;
+}
+
+/*Estilos en general para todas las imagenes*/
+.nosotros img{
+	padding: 0;
+	width: 28%;
+	height: 160px;
+}
+
+.nosotros h2{
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+
+.titulo-nosotros{
+	font-size: 40px;
+}
+
+.nosotros p{
+	font-size: 20px;
+}
+
+.text-content{
+	display: inline-block;
+	width: 40%;
+	margin-top: 0;
+	color: rgb(34, 34, 34);
+	margin-left: 8%;
+	margin-right: 12%;
+}
+
+.img-vision{
+	margin-left: 8%;
+	margin-right: 3%;
+}
+/* 
+.elementos{
+	justify-content: center;
+} */
+
+
+
+
+
+
+
+/*-----------------------------------------------------
+--------------------MEDIAQUERY-------------------------
+-------------------------------------------------------*/
 @media all and (max-width: 1546px) {
 	.fondo-proyectos{
 		padding: 40px;
