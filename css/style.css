@@ -19,6 +19,7 @@ html{
 	width: 20%;
 }
 
+
 .padre{
 	display: inline-block;
 	padding: 10px 20px 10px 20px ;
@@ -59,7 +60,7 @@ nav{
     
 }
 
-
+.btn-nav { display: none; }
 /* cintillo */
 
 .container {
@@ -268,6 +269,17 @@ nav{
 	border-bottom-right-radius: 30px;
 	border-top-left-radius: 20px;
 }
+.btn-card{
+	padding: 0px 50px 10px 50px;
+	border: 5px solid #2dcca7;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	transition: all 0.5s ease-out;
+	display: none;
+}
 
 .card-content{
 	padding: 0px 30px;
@@ -364,7 +376,7 @@ nav{
 	padding: 40px;
 	padding-left: 0;
 	background-color: transparent;
-	
+	display: flex;
 }
 #nosotros {
 	margin-top: 0;
@@ -454,16 +466,21 @@ nav{
 	}
 }
 
-@media all and (max-width: 978px) {
+@media all and (max-width: 1031px) {
 	nav {
 		flex-direction: column;
 		align-items: center;
+	}
+	.btn-nav { display:inline-block ; }
+
+	.hide-a {
+		display: none;
 	}
 	.padre:last-child{
 		margin-right: 0px;
 	}
 	#logo {
-		margin-left: 45%;
+		margin-left: 43%;
 	}
 	nav a {
 		width: 25%;
@@ -473,6 +490,54 @@ nav{
 	}
 }
 
-@media all and (max-width: 833px) {
-	
+@media all and (max-width: 825px) {
+	.titulo-proyecto {
+		flex-basis: 62%;
+	}
+}
+
+@media all and (max-width: 733px) {
+	.titulo-proyecto {
+		flex-basis: 74%;
+	}
+
+	.card-complete {
+		flex-basis: 68%;
+		margin-left: 18%;
+	}
+	#logo {
+		margin-left: 40%;
+	}
+}
+@media all and (max-width: 651px) {
+	.titulo-proyecto {
+		flex-basis: 100%;
+	}
+	.linea2 {
+		flex-basis: 55%;
+	}
+}
+
+@media all and (max-width: 523px) {
+	.linea2 {
+		flex-basis: 40%;
+	}
+	#logo {
+		font-size: 25px;
+	}
+}
+
+@media all and (max-width: 471px) {
+	.hide-info {
+		display: none;
+	}
+	.btn-card {
+		display: inline-block;
+	}
+	.card-complete, .img-card {
+		height: auto;
+	}
+	.linea2 {
+		flex-basis: 25%;
+	}
 }

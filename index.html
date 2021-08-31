@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>AsinCorp</title>
 </head>
 <body>
     <!--Menu de navegacion-->
     <nav>
         <h1 id="logo">AsinCorp</h1>
-        <a href="#inicio" class="padre"><i class="fas fa-home"></i>Inicio</a>
-        <a href="#proyectos" class="padre" ><i class="fas fa-rocket"></i>Proyectos</a>
-        <a href="" class="padre"><i class="fas fa-users"></i>Nosotros</a>
-        <a href="" class="padre"><i class="fas fa-envelope"></i>Contacto</a>
+        <a class="btn-nav padre" onclick="btnNav()">Menu</a>
+        <a href="#inicio" class="padre hide-a"><i class="fas fa-home"></i>Inicio</a>
+        <a href="#proyectos" class="padre hide-a" ><i class="fas fa-rocket"></i>Proyectos</a>
+        <a href="" class="padre hide-a"><i class="fas fa-users"></i>Nosotros</a>
+        <a href="" class="padre hide-a"><i class="fas fa-envelope"></i>Contacto</a>
     </nav>
     
     <!-- Cintillo  -->
@@ -43,7 +45,8 @@
             <div class="card-complete text-align flex">
                 <img src="img/music-icon.jpg" alt="Error al cargar la imagen" class="img-card">
 
-                <div class="card-content text-align flex">
+                <a onclick="btnCard1()" class="btn-card">Ver más...</a>
+                <div class="card-content text-align flex hide-info" id='card1'>
                     
                     <h3 class="titulo-card">Music-Heart</h3>
                     <p class="eslogan"><span><b>Escucha donde quieras, como quieras y cuando quieras.</b></span></p>
@@ -52,10 +55,11 @@
                 </div>
             </div>
 
-            <div class="card-complete text-align flex">
+            <div class="card-complete text-align flex ">
                 <img src="img/store.jpg" alt="Error al cargar la imagen" class="img-card">
 
-                <div class="card-content text-align flex">
+                <a onclick="btnCard2()" class="btn-card">Ver más...</a>
+                <div class="card-content text-align flex hide-info" id='card2'>
                     
                     <h3 class="titulo-card">Barbara's Shop</h3>
                     <p class="eslogan"><span><b>Roger, Roger, y Roger.</b></span></p>
@@ -67,7 +71,8 @@
             <div class="card-complete text-align flex">
                 <img src="img/music-icon.jpg" alt="Error al cargar la imagen" class="img-card">
 
-                <div class="card-content text-align flex">
+                <a onclick="btnCard3()" class="btn-card">Ver más...</a>
+                <div class="card-content text-align flex hide-info" id='card3'>
                     
                     <h3 class="titulo-card">Music-Heart</h3>
                     <p class="eslogan"><span><b>Escucha donde quieras, como quieras y cuando quieras.</b></span></p>
@@ -79,7 +84,8 @@
             <div class="card-complete text-align flex">
                 <img src="img/store.jpg" alt="Error al cargar la imagen" class="img-card">
 
-                <div class="card-content text-align flex">
+                <a onclick="btnCard4()" class="btn-card">Ver más...</a>
+                <div class="card-content text-align flex hide-info" id='card4'>
                     
                     <h3 class="titulo-card">Barbara's Shop</h3>
                     <p class="eslogan"><span><b>Roger, Roger, y Roger.</b></span></p>
