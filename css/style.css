@@ -16,6 +16,7 @@ html{
 	margin-top: 10px;
 	margin-left: 10%;
 	font-size: 30px;
+	width: 20%;
 }
 
 .padre{
@@ -50,11 +51,14 @@ nav{
 
 
 .padre:hover{ 
-	transition: all .45s ease-in-out;
-	transform: translateY(-3px);
-	box-shadow: -2px 4px 2px  rgb(18, 216, 133);
-	
+    transition: all .9s ease-in-out;
+    transform: translate(10px,-5px);
+    transition: all .45s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
+    
 }
+
 
 /* cintillo */
 
@@ -80,27 +84,12 @@ nav{
 		background-position: 0% 50%;
 	}  
 }
-.padre:hover{ 
-    transition: all .9s ease-in-out;
-    transform: translate(10px,-5px);
-    transition: all .45s ease-in-out;
-    transform: translateY(-3px);
-    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
-    
-}
 @keyframes bg-pan-right {
 	0% {
 		background-position: 0% 50%;
 	}
 
 
-}
-.padre:hover{ 
-    transition: all .9s ease-in-out;
-    transform: translate(10px,-5px);
-    transition: all .45s ease-in-out;
-    transform: translateY(-3px);
-    box-shadow: -2px 4px 2px  rgb(18, 216, 133);
 }
 
 /* Slider */
@@ -469,9 +458,21 @@ nav{
 	nav {
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+	}
+	.padre:last-child{
+		margin-right: 0px;
+	}
+	#logo {
+		margin-left: 45%;
 	}
 	nav a {
 		width: 25%;
 	}
+	.titulo-proyecto {
+		flex-basis: 48%;
+	}
+}
+
+@media all and (max-width: 833px) {
+	
 }
